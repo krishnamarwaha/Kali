@@ -1,0 +1,8 @@
+29/01/2023 Age:10
+Kali/Dnschef
+1. go into /etc/resolv.conf and on the first line add "nameserver 127.0.0.1"
+2. type sudo dnschef in terminal
+3. on another terminal type "host -t A (webname)" and on the other terminal it should say something
+4. If that works then on a new terminal type in "sudo dnschef --fakeip=(fakeip) --fakedomains=(webname)" example is: "sudo dnschef --fakeip=192.168.1.2 --fakedomains=reply.com"
+TIP: Remerber to close all dnschef before starting new one by "ps -ef | grep dnschef" and then doing "kill -9 (pid)"
+ 
